@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import {useState, useEffect, useCallback, useContext, useRef, useMemo} from 'react'
+import {Button} from 'react-bootstrap';
+import './App.css'
+import 'bootstrap/scss/bootstrap.scss';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+const Home = () => {
+
+  const [sample, setSample] = useState();
+
+  useEffect(() => {
+    
+  },[])
+
+  return(
+    <div className='home'>
+      <div className='topbar'>
+        <h2>#wheresthepartytonight?!</h2>
+        <Button variant="success">Success</Button>{' '}
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default Home;
